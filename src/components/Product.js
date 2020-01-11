@@ -5,6 +5,7 @@ import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
+import '../App.css'
 
 const Product = (props) => {
     console.log(props.product.fields.url, 'props?')
@@ -15,8 +16,9 @@ const Product = (props) => {
         <div>
             { props.product ? (
                 <Card >
-                    <CardMedia 
-                    style={{height:50, paddingTop: '56.25%'}}
+            <CardMedia 
+              className="card-media"
+                    style={{paddingTop: '56.25%'}}
                     image={props.product.fields.image[0].fields.file.url}
                     title={props.product.fields.title}
                     
