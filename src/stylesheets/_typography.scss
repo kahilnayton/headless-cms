@@ -1,0 +1,213 @@
+$default-type-color: -color(grey);
+$default-type-family: "Gilroy-Medium";
+$default-heading-family: "Gilroy-ExtraBold";
+$default-text-weight: -weight(regular);
+
+div,
+p,
+span,
+li,
+small,
+label,
+input,
+select,
+button,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+figure,
+cite {
+  // @include font-smoothing(on);
+
+  text-rendering: optimizeLegibility;
+  font-family: $default-type-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $default-heading-family;
+}
+
+* {
+  &::selection {
+    background-color: -color(silver);
+  }
+
+  &::-moz-selection {
+    background-color: -color(silver);
+  }
+}
+
+@mixin hd-xl($color: $default-type-color) {
+  color: $color;
+  font-family: $default-heading-family;
+  font-size: 4rem;
+  font-weight: -weight(bold);
+  line-height: 1.1;
+
+  @include for-tablet-portrait-up {
+    font-size: 5.6rem;
+  }
+
+  @include for-tablet-landscape-up {
+    font-size: 8.8rem;
+    line-height: 1;
+  }
+}
+
+@mixin hd-a($color: $default-type-color) {
+  color: $color;
+  font-family: $default-heading-family;
+  font-size: 3.6rem;
+  font-weight: -weight(bold);
+  line-height: 1.3;
+
+  @include for-tablet-portrait-up {
+    font-size: 4.8rem;
+  }
+
+  @include for-tablet-landscape-up {
+    font-size: 6.4rem;
+    line-height: 1.13;
+  }
+}
+
+@mixin hd-b($color: $default-type-color) {
+  color: $color;
+  font-family: $default-heading-family;
+  font-size: 2rem;
+  font-weight: -weight(bold);
+  line-height: 1.3;
+
+  @include for-tablet-portrait-up {
+    font-size: 3rem;
+  }
+
+  @include for-tablet-landscape-up {
+    font-size: 5.6rem;
+    line-height: 1.13;
+  }
+}
+
+@mixin hd-c($color: $default-type-color) {
+  color: $color;
+  font-family: $default-heading-family;
+  font-size: 2rem;
+  font-weight: -weight(bold);
+  line-height: 1.3;
+
+  @include for-tablet-portrait-up {
+    font-size: 3.2rem;
+  }
+
+  @include for-tablet-landscape-up {
+    font-size: 4rem;
+    line-height: 1.13;
+  }
+}
+
+@mixin hd-d($color: $default-type-color) {
+  color: $color;
+  font-family: $default-heading-family;
+  font-size: 2rem;
+  font-weight: -weight(bold);
+  line-height: 1.3;
+
+  @include for-tablet-portrait-up {
+    font-size: 2.4rem;
+  }
+
+  @include for-tablet-landscape-up {
+    font-size: 3.2rem;
+  }
+}
+
+@mixin hd-e($color: $default-type-color) {
+  color: $color;
+  font-family: $default-heading-family;
+  font-size: 2rem;
+  font-weight: -weight(bold);
+  line-height: 1.3;
+
+  @include for-tablet-portrait-up {
+    font-size: 2.4rem;
+  }
+}
+
+@mixin hd-f($color: $default-type-color) {
+  color: $color;
+  font-family: $default-heading-family;
+  font-size: 1.6rem;
+  font-weight: -weight(bold);
+  line-height: 1.3;
+
+  @include for-tablet-portrait-up {
+    font-size: 2rem;
+  }
+}
+
+@mixin hd-g($color: $default-type-color) {
+  color: $color;
+  font-family: $default-heading-family;
+  font-size: 1.2rem;
+  font-weight: -weight(bold);
+  line-height: 1.3;
+
+  @include for-tablet-portrait-up {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin copy-a($color: $default-type-color, $weight: $default-text-weight) {
+  color: $color;
+  font-size: 2.8rem;
+  font-weight: $weight;
+  line-height: 1.3;
+
+  @include for-tablet-landscape-up {
+    font-size: 3.2rem;
+  }
+}
+
+@mixin copy-b($color: $default-type-color, $weight: $default-text-weight) {
+  color: $color;
+  font-size: 2.4rem;
+  font-weight: $weight;
+  line-height: 1.3;
+}
+
+@mixin copy-c($color: $default-type-color,$weight: $default-text-weight) {
+  color: $color;
+  font-size: 1.6rem;
+  font-weight: $weight;
+  line-height: 1.3;
+
+  @include for-tablet-landscape-up {
+    font-size: 1.8rem;
+    line-height: 1.44;
+  }
+}
+
+@mixin copy-d($color: $default-type-color,$weight: $default-text-weight) {
+  color: $color;
+  font-size: 1.6rem;
+  font-weight: $weight;
+  line-height: 1.5;
+}
+
+@mixin copy-e($color: $default-type-color,$weight: $default-text-weight) {
+  color: $color;
+  font-size: 1.4rem;
+  font-weight: $weight;
+  line-height: 1.44;
+}

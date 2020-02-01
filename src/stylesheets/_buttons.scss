@@ -1,0 +1,60 @@
+// .button {
+//   color: white;
+//   text-align: center;
+//   padding: 1.3rem;
+//   box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+//   text-transform: uppercase;
+//   border-radius: 4.5rem;
+//   cursor: pointer;
+//   width: 100%;
+//   will-change: background, color, border;
+//   transition: background 0.2s $ease-in-out-quart, color 0.2s $ease-in-out-quart, border 0.2s $ease-in-out-quart;
+
+//   &--primary {
+//     background-color: -color(blue-primary);
+//     border: 0.2rem solid -color(blue-primary);
+
+//     &:hover {
+//       background-color: -color(white);
+//       color: -color(blue-primary);
+//     }
+//   }
+
+//   &--secondary {
+//     background-color: -color(blue-secondary);
+//     border: 0.2rem solid -color(blue-secondary);
+
+//     &:hover {
+//       background-color: transparent;
+//       color: -color(blue-secondary);
+//     }
+//   }
+
+//   &--tertiary {
+//     background-color: -color(white);
+//     border: 0.2rem solid -color(blue-primary);
+//     color: -color(blue-primary) !important;
+
+//     &:hover {
+//       background-color: -color(blue-primary);
+//       color: -color(white) !important;
+//     }
+//   }
+
+//   &:disabled {
+//     background-color: -color(silver);
+//     border: none;
+//     color: -color(white);
+//     cursor: unset;
+//   }
+
+//   & + * {
+//     margin-top: 2.4rem;
+//   }
+
+//   @include for-tablet-portrait-up {
+//     width: unset;
+//     min-width: 24.2rem;
+//     padding: 2rem 4.2rem;
+//   }
+// }
